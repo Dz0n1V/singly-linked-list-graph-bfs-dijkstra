@@ -151,7 +151,7 @@ Note that the route `A1 -> A2 -> A3 -> B3` (15 min) beats the route over mountai
 ## Implementation notes
 
 - The graph is a Python `dict` that maps each location identifier to its adjacency list. The adjacency list itself is the custom singly linked list, and each node stores a `(neighbor, weight)` pair.
-- The BFS queue (`Red`) and the stack (`Stek`) are thin wrappers around the custom linked list. A Python `set` is used only to remember visited nodes.
+- The BFS queue and the stack are thin wrappers around the custom linked list. A Python `set` is used only to remember visited nodes.
 - Dijkstra's algorithm uses a simple linear scan to pick the closest unvisited node, so it runs in O(V²). That is fine for a cable car network of this size.
 
 ## License
