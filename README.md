@@ -31,7 +31,7 @@ The project models a mountain cable car network: nodes are locations on the moun
 Requirements: Python 3.6+ (no external dependencies).
 
 ```bash
-git clone https://github.com/<your-username>/singly-linked-list-weighted-graph-bfs-dijkstra.git
+git clone https://github.com/Dz0n1V/singly-linked-list-weighted-graph-bfs-dijkstra.git
 cd singly-linked-list-weighted-graph-bfs-dijkstra
 
 # Graph program (Task 2)
@@ -162,29 +162,25 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 This project was written as a university assignment on linked lists and graphs. The task description, translated to English, follows.
 
-### Task 1 – Linked Lists [35 points]
+### Task 1 – Linked Lists
 
 Write an interactive program that illustrates working with an appropriate type of linked list.
 
-Depending on the problem number *i*, you need to implement and use a linked list of the following type:
-
-0. Singly linked list with a header node
-1. Singly linked circular list without a header node
-2. Doubly linked list without a header node
+You need to implement and use a singly linked list with a header node
 
 You need to implement the following operations for working with linked lists:
 
-1. [5 points] Creating and destroying a linked list
-2. [5 points] Printing the linked list
-3. [10 points] Inserting an element at a given position
-4. [10 points] Deleting an element with a given value
-5. [5 points] Searching the list based on a given value
+1. Creating and destroying a linked list
+2. Printing the linked list
+3. Inserting an element at a given position
+4. Deleting an element with a given value
+5. Searching the list based on a given value
 
-The content of the node's information field is left to the student to implement and can be adapted to the needs of Task 2.
+The content of the node's information field is left to the person to implement and can be adapted to the needs of Task 2.
 
 The user interacts with the program through a simple menu. The program should print the contents of the menu and then wait for the user to select (by entering via keyboard) the ordinal number of one of the offered items, after which, before execution, it expects the user to enter additional parameters if necessary. The procedure repeats until the user selects the option to exit the program from the menu.
 
-### Task 2 – Graphs [65 points]
+### Task 2 – Graphs
 
 A directed weighted graph is used to model a system of cable cars on a mountain range. In the graph, nodes represent locations on the mountain that offer various activities for visitors. An edge between two nodes means that it is possible to travel by cable car from the first point to the second. Between some locations there is a cable car that carries passengers in only one direction, and between others there is one that carries them in both directions.
 
@@ -192,10 +188,10 @@ Each location is determined by a unique identifier (e.g., A2, where A is the ide
 
 You need to implement the following operations for working with the directed weighted graph used to model the cable cars on this mountain range:
 
-1. [10 points] Creating and destroying the graph
-2. [10 points] Adding a node to the graph and removing a node from the graph
-3. [10 points] Adding and removing an edge between two nodes in the graph
-4. [5 points] Printing the graph representation
+1. Creating and destroying the graph
+2. Adding a node to the graph and removing a node from the graph
+3. Adding and removing an edge between two nodes in the graph
+4. Printing the graph representation
 
 It must also be possible to load the entire plan of the mountain range from a file in the following format. The first line of the file contains the identifiers of all locations separated by commas, and all other lines in the file represent information about cable cars in the form `id1-id2-time`, where `id1` and `id2` are location identifiers, and `time` is the time needed to get from location `id1` to location `id2` by cable car.
 
@@ -203,12 +199,9 @@ When solving the given problem, you must use adjacency lists as the memory repre
 
 Additionally, for more efficient organization of touring the mountain, the following must be supported:
 
-1. [20 points] Determining all locations on the mountain that can be reached by cable car from a given starting point
-2. [10 points] Determining the shortest path between two given locations on the mountain using Dijkstra's algorithm
+1. Determining all locations on the mountain that can be reached by cable car from a given starting point
+2. Determining the shortest path between two given locations on the mountain using Dijkstra's algorithm
 
-Depending on the problem number *j*, determining all locations on the mountain that can be reached by cable car from a given starting point should be implemented using:
-
-0. Depth-first search (DFS)
-1. Breadth-first search (BFS)
+Determining all locations on the mountain that can be reached by cable car from a given starting point should be implemented using *breadth-first search* (BFS)
 
 The user interacts with the program through a simple menu. The program should print the contents of the menu and then wait for the user to select (by entering via keyboard) the ordinal number of one of the offered items, after which, before execution, it expects the user to enter additional parameters if necessary. The procedure repeats until the user selects the option to exit the program from the menu.
