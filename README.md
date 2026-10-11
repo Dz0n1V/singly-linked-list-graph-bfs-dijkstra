@@ -1,4 +1,4 @@
-# singly-linked-list-weighted-graph-bfs-dijkstra
+# singly-linked-list-graph-bfs-dijkstra
 
 Directed weighted graph implemented with adjacency lists built on a custom singly linked list. Includes BFS reachability and Dijkstra's shortest path, with an interactive CLI menu.
 
@@ -31,8 +31,8 @@ The project models a mountain cable car network: nodes are locations on the moun
 Requirements: Python 3.6+ (no external dependencies).
 
 ```bash
-git clone https://github.com/Dz0n1V/singly-linked-list-weighted-graph-bfs-dijkstra.git
-cd singly-linked-list-weighted-graph-bfs-dijkstra
+git clone https://github.com/Dz0n1V/singly-linked-list-graph-bfs-dijkstra.git
+cd singly-linked-list-graph-bfs-dijkstra
 
 # Graph program (Task 2)
 python cable_car_graph.py
